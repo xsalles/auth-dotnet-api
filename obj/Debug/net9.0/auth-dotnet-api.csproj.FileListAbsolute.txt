@@ -34,3 +34,4 @@ C:\Users\pedri\Documents\c#\auth-dotnet-api\obj\Debug\net9.0\refint\auth-dotnet-
 C:\Users\pedri\Documents\c#\auth-dotnet-api\obj\Debug\net9.0\auth-dotnet-api.pdb
 C:\Users\pedri\Documents\c#\auth-dotnet-api\obj\Debug\net9.0\auth-dotnet-api.genruntimeconfig.cache
 C:\Users\pedri\Documents\c#\auth-dotnet-api\obj\Debug\net9.0\ref\auth-dotnet-api.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\BCrypt.Net-Next.dll

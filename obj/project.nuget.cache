@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LuBRsDA0WOU=",
+  "dgSpecHash": "QZKpBZG/OBU=",
   "success": true,
   "projectFilePath": "C:\\Users\\pedri\\Documents\\c#\\auth-dotnet-api\\auth-dotnet-api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pedri\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.9\\microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.apidescription.server\\9.0.0\\microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.openapi\\1.6.25\\microsoft.openapi.1.6.25.nupkg.sha512",
