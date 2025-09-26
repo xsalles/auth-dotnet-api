@@ -6,7 +6,6 @@ C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\auth-dotnet-api.dep
 C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\auth-dotnet-api.runtimeconfig.json
 C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\auth-dotnet-api.dll
 C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\auth-dotnet-api.pdb
-C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -35,3 +34,13 @@ C:\Users\pedri\Documents\c#\auth-dotnet-api\obj\Debug\net9.0\auth-dotnet-api.pdb
 C:\Users\pedri\Documents\c#\auth-dotnet-api\obj\Debug\net9.0\auth-dotnet-api.genruntimeconfig.cache
 C:\Users\pedri\Documents\c#\auth-dotnet-api\obj\Debug\net9.0\ref\auth-dotnet-api.dll
 C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\BCrypt.Net-Next.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\DotNetEnv.dll
+C:\Users\pedri\Documents\c#\auth-dotnet-api\bin\Debug\net9.0\Sprache.dll

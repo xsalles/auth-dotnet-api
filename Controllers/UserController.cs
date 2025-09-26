@@ -1,13 +1,17 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using AuthDotNetApi.Dto;
 using AuthDotNetApi.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace AuthDotNetApi.Controllers
 {
 
     [ApiController]
     [Route("api/[controller]")]
-    public class UserController : ControllerBase
+    public class UserController(IConfiguration configuration) : ControllerBase
     {
         public static User user = new User();
 
@@ -24,7 +28,7 @@ namespace AuthDotNetApi.Controllers
         }
 
         [HttpPost("login")]
-        public ActionResult<User> Login(UserDto userDto)
+        public ActionResult<string> Login(UserDto userDto)
         {
             if (!user.Username.Equals(userDto.Username))
             {
@@ -36,8 +40,35 @@ namespace AuthDotNetApi.Controllers
                 return BadRequest("Wrong password");
             }
 
-            return Ok("Login successful.");
+            string token = CreateToken(user);
+
+            return Ok(token);
+        }
+
+        private string CreateToken(User user)
+        {
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, user.Username)
+            };
+
+            var secret = configuration.GetValue<string>("AppSettings:Token");
+
+            if (string.IsNullOrEmpty(secret)) throw new InvalidOperationException("JWT secret is not configured.");
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
+
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512);
+
+            var token = new JwtSecurityToken(
+                claims: claims,
+                expires: DateTime.UtcNow.AddDays(1),
+                issuer: configuration.GetValue<string>("AppSettings:Issuer"),
+                audience: configuration.GetValue<string>("AppSettings:Audience"),
+                signingCredentials: creds
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
-
 }
