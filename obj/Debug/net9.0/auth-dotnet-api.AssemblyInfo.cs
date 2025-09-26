@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("auth-dotnet-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a429270b3e149d5f15647a4587f1d87b842f9bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07bbdb3516f0fd24ad173776d0258bc079771e4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("auth-dotnet-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("auth-dotnet-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
