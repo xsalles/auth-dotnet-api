@@ -1,4 +1,6 @@
+using AuthDotNetApi.Data;
 using DotNetEnv;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,15 @@ builder.Configuration["AppSettings:Token"] = jwtSecret;
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+
+var connectionString = $"Server={Environment.GetEnvironmentVariable("DB_SERVER")}" +
+                       $";Database={Environment.GetEnvironmentVariable("DB_NAME")}" +
+                       $";User={Environment.GetEnvironmentVariable("DB_USER")}" +
+                       $";Password={Environment.GetEnvironmentVariable("DB_PASSWORD")}" +
+                       $";Port={Environment.GetEnvironmentVariable("DB_PORT")}";
+
+builder.Services.AddDbContext<UserDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 var app = builder.Build();
 
